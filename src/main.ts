@@ -7,8 +7,9 @@ app.innerHTML = `
   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
 `;
 
-import init, { greet } from "tiny-draw"
+import init, { TinyDraw } from "tiny-draw"
 ;(async () => {
   await init();
-  greet();
+  const tiny = new TinyDraw();
+  console.log(tiny);
 })();

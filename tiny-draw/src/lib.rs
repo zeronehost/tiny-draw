@@ -10,10 +10,18 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
 extern "C" {
-  fn alert(s: &str);
+  
 }
 
+mod core;
+
 #[wasm_bindgen]
-pub fn greet() {
-  alert("Hello, tiny-draw!");
+pub struct TinyDraw {}
+
+#[wasm_bindgen]
+impl TinyDraw {
+  #[wasm_bindgen(constructor)]
+  pub fn new() -> TinyDraw {
+    Self {  }
+  }
 }

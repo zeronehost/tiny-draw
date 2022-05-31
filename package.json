@@ -32,7 +32,8 @@
     "simple-git-hooks": "^2.8.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
-    "vite-plugin-rsw": "^2.0.7"
+    "vite-plugin-rsw": "^2.0.7",
+    "wasm-pack": "^0.10.2"
   },
   "config": {
     "commitizen": {
